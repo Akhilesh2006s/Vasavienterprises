@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            overflow: hidden;
+            padding: 15px;
+        }
+
+        .navbar-brand {
+            float: left;
+            display: block;
+            color: rgb(17, 17, 17);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: rgb(7, 7, 7);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            background-color: #788178;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #4CAF50;
+            color: rgb(9, 9, 9);
+        }
+
+        .search-container {
+            float: right;
+        }
+
+        .search-container input[type=text] {
+            padding: 10px;
+            margin-top: 8px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .search-container button {
+            padding: 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #4CAF50;
+            color: rgb(11, 11, 11);
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar a, .search-container {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .navbar-brand, .navbar a {
+                padding: 14px;
+            }
+
+            .navbar a:hover {
+                background-color: #0e0d0d;
+                color: black;
+            }
+
+            .navbar a.active {
+                background-color: #4CAF50;
+                color: rgb(14, 14, 14);
+            }
+
+            .search-container {
+                margin-top: 8px;
+            }
+
+            .search-container input[type=text] {
+                width: 100%;
+            }
+
+            .search-container button {
+                width: 100%;
+            }
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="navbar-brand">VASAVI ENTERPRISES</div>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="Products.html">Products</a>
+    <a href="blog.html">Blog</a>
+    <a href="tel:9848239912">Contact</a>
+    <div class="navbar">
+        <button onclick="redirectToWhatsApp()">Get Your Free Estimate Now</button>
+
+        <script>
+            function redirectToWhatsApp() {
+                // Replace 1234567890 with your business number
+                var phoneNumber = '9848239912';
+    
+                // Create the WhatsApp link
+                var whatsappLink = 'https://wa.me/' + phoneNumber + '?text=Get%20your%20free%20estimate%20now';
+    
+                // Redirect the user to WhatsApp
+                window.location.href = whatsappLink;
+            }
+        </script>
+    </div>
+</div>
+
+</body>
+</html>
+
+<!-- Add your page content here -->
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Vasavi enterprises</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 30%; /* Adjust the width as needed */
+            margin-bottom: 10px;
+            border: 1px solid #ddd; /* Add a border for better visibility */
+            border-radius: 4px;
+        }    
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Screenshot_2024-01-01_201844-transformed.png">
+        <h1>VASAVI ENTERPRISES</h1>
+        <p>Welcome to a world of Electrical dealer</p>
+    </header>
+
+    <section>
+        <h2>Our Journey</h2>
+        <p><p>Founded with a passion for providing top-quality electrical solutions, Vasavienterprises stands as a premier electrical dealer committed to meeting the diverse needs of our valued customers.
+          Established on 1974, we have been dedicated to delivering a comprehensive range of electrical products, from wiring essentials to cutting-edge technology.Our business prides itself on a
+          commitment to reliability, customer satisfaction, and technical expertise. As a trusted name in the industry, we serve a broad clientele, including homeowners, businesses, and contractors,
+         providing them with access to a curated selection of products renowned for their durability and performance. What sets us apart is not just the quality of our offerings  but also
+          our personalized approach, ensuring that each customer receives tailored solutions for their specific requirements. At Vasavienterprises, we illuminate the path to
+           electrical excellence, offering not just products but a commitment to powering a brighter, more connected future."
+</p>
+
+        <h2>Production companies</h2>
+        <div class="image-gallery">
+          <img src="brands\gm.png" alt="product 1" >
+          <img src="brands\gollld.png" alt="Brand 2" class="brand-logo">
+          <img src="brands\legrand.png" alt="Brand 3" class="brand-logo">
+          <img src="brands\philips1.png" alt="Brand 4" class="brand-logo">
+          <img src="brands\chen528112_univ528112_5c2e1c04b7eb8.png" alt="Brand 5" class="brand-logo">
+          <img src="brands\1280px-Anchor_by_Panasonic_logo.svg.png" alt="Brand 3" class="brand-logo">
+          <img src="brands\sudhakar.png" alt="Brand 3" class="brand-logo">
+          <img src="brands\vguard1.png" alt="Brand 3" class="brand-logo">
+          <img src="brands\finolex.jpg" alt="Brand 3" class="brand-logo">
+          <img src="brands\polycab.png" alt="Brand 3" class="brand-logo">
+          <img src="brands\Crompton.png" alt="Brand 3" class="brand-logo">
+          <img src="brands\orient.png" alt="Brand 3" class="brand-logo">
+          <img src="brands\koncept.png" alt="Brand 3" class="brand-logo">
+        </div>
+
+
+        <h2>Own production</h2>
+        <p>Introducing our premier line of piping solutions - Sunny Gold and RK Gold Pipes. Engineered with precision and durability, our branded pipes exemplify the highest standards in the industry. Choose reliability and quality for your construction needs – choose Sunny Gold and RK Gold Pipes.</p>
+          
+
+
+        <h2>Services & <i class="fa fa-truck" style="font-size:24px"></i>
+     Transportation   </h2>
+        <p>We ensure you to give warrenty card and amazing services at great deals and we Transport all over india. </p>
+
+        
+        
+    </section>
+
+    <footer>
+        <p>Get in Touch:</p>
+        <ul>
+            <li>Phone: 9848239912</li>
+            <li>Email: vasavi enterprises</li>
+            <li>Developer email:akhileshsamayamanthula@gmail.com</li>
+        </ul>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        </script>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.203924822083!2d80.60780707460893!3d16.51579942732926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35efde20450849%3A0xccb05392b764bb37!2sVasavi%20Enterprises!5e0!3m2!1sen!2sin!4v1702827616962!5m2!1sen!2sin" width="1500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+    </footer>
+    <footer>
+        <p>&copy; 2023 VASAVI ENTERPRISES. All rights reserved.</p>
+        <p>AKHILESH SAMAYAMANTHULA &#8594; DEVELOPER</p>
+    
+    </footer>
+</body>
+</html>

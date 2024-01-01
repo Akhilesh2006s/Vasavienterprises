@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            overflow: hidden;
+            padding: 15px;
+        }
+
+        .navbar-brand {
+            float: left;
+            display: block;
+            color: rgb(17, 17, 17);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: rgb(7, 7, 7);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            background-color: #788178;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #4CAF50;
+            color: rgb(9, 9, 9);
+        }
+
+        .search-container {
+            float: right;
+        }
+
+        .search-container input[type=text] {
+            padding: 10px;
+            margin-top: 8px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .search-container button {
+            padding: 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #4CAF50;
+            color: rgb(11, 11, 11);
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar a, .search-container {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .navbar-brand, .navbar a {
+                padding: 14px;
+            }
+
+            .navbar a:hover {
+                background-color: #0e0d0d;
+                color: black;
+            }
+
+            .navbar a.active {
+                background-color: #4CAF50;
+                color: rgb(14, 14, 14);
+            }
+
+            .search-container {
+                margin-top: 8px;
+            }
+
+            .search-container input[type=text] {
+                width: 100%;
+            }
+
+            .search-container button {
+                width: 100%;
+            }
+        }
+        .blog-post {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-top:2px solid #030303;
+            border-bottom: 2px solid #030303;
+        }
+        .blog-post h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .post-meta {
+            font-size: 14px;
+            color: #777;
+        }
+        .blog-post img {
+            max-width: 25%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2px;
+            text-align: center;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56 .25%; /* 16:9 aspect ratio for responsive sizing */
+            overflow: hidden;
+        }
+       
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="navbar-brand">VASAVI ENTERPRISES</div>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="Products.html">Products</a>
+    <a href="blog.html">Blog</a>
+    <a href="tel:9848239912">Contact</a>
+    
+    <div class="navbar">
+        <button onclick="redirectToWhatsApp()">Get Your Free Estimate Now</button>
+
+        <script>
+            function redirectToWhatsApp() {
+                // Replace 1234567890 with your business number
+                var phoneNumber = '9848239912';
+    
+                // Create the WhatsApp link
+                var whatsappLink = 'https://wa.me/' + phoneNumber + '?text=Get%20your%20free%20estimate%20now';
+    
+                // Redirect the user to WhatsApp
+                window.location.href = whatsappLink;
+            }
+        </script>
+    </div>
+</div>
+<section>
+    <!-- Blog Post 1 -->
+    <title>Blog | Vasavi Enterprises</title>
+
+
+    <div class="blog-post">
+        <div class="blog-image">
+            <div class="blog-images" id="imageContainer">
+           <img src="shop pcis\1.jpg" alt="Image 1">
+           <img src="shop pcis\2.jpg" alt="Image 1">
+           <img src="shop pcis\3.jpg" alt="Image 1">
+           <img src="shop pcis\4.jpg" alt="Image 1">
+           <img src="shop pcis\5.jpg" alt="Image 1">
+        </div>
+        <h2>Bussiness place</h2>
+        <p class="post-meta">Published on January 1, 2024</p>
+        <p></p>
+    </div>
+    <div class="blog-images" id="imageContainer">
+        <!-- First 2 images will be initially displayed -->
+        <div class="blog-post">
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="WhatsApp Video 2024-01-01 at 2.52.12 PM.mp4" type="video/mp4">
+            </video>
+            <h2>HAPPY NEW YEAR</h2>
+        <p class="post-meta">Published on January 1, 2024</p>
+        <p></p>  
+      
+        <!-- Add more images as needed -->
+    </div>
+
+
+</body>
+</html>
+
+    <!-- Add more blog posts as needed -->
+</section>
+<footer>
+    <p>&copy; 2023 VASAVI ENTERPRISES. All rights reserved.</p>
+    <p>AKHILESH SAMAYAMANTHULA &#8594; DEVELOPER</p>
+
+</footer>
+
+</body>
+</html>
